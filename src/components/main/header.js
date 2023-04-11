@@ -41,14 +41,7 @@ function Header() {
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
-              >
-                <Nav.Link href="#action1">
-                  <img
-                    src="https://htmldemo.net/adda/adda/assets/images/logo/logo.png"
-                    alt="abc"
-                  ></img>
-                </Nav.Link>
-              </Nav>
+              ></Nav>
               <Form className="d-flex">
                 <Form.Control
                   type="search"
