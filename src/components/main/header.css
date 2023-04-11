@@ -1,0 +1,15 @@
+.logo{
+    width: 7rem;
+    height: auto;
+}
+.navbartxt{
+    font-weight: 700 !important;
+    color: rgb(51,51,51)!important;
+    margin-left: 3rem !important;
+}
+.navbartxt:hover{
+    color: rgb(220,71,55) !important;
+}
+.avatar{
+    margin-left: 2rem !important;
+}
