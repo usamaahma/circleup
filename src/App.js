@@ -1,11 +1,12 @@
 import "./App.css";
-import Landing from "./components/landing";
-import Header from "./components/main/header";
+import Landing from "../src/screens/landingPage/landing";
+import Header from "./components/haeder/header";
 
 function App() {
   return (
     <div className="App">
-      <Header /> <Landing />
+      <Header />
+      <Landing />
     </div>
   );
 }
