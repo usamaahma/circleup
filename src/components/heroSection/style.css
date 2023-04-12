@@ -1,0 +1,8 @@
+.bg-image {
+  background-image: url("https://htmldemo.net/adda/adda/assets/images/banner/profile-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 40vh;
+}
