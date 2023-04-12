@@ -1,15 +1,22 @@
-.logo{
-    width: 7rem;
-    height: auto;
+.logo {
+  width: 10rem;
 }
-.navbartxt{
-    font-weight: 700 !important;
-    color: rgb(51,51,51)!important;
-    margin-left: 3rem !important;
+.navbartxt {
+  font-weight: 700 !important;
+  color: rgb(51, 51, 51) !important;
+  margin-left: 3rem !important;
+  font-size: 1.5rem !important;
+  text-align: center;
 }
-.navbartxt:hover{
-    color: rgb(220,71,55) !important;
+.navbartxt:hover {
+  color: rgb(220, 71, 55) !important;
 }
-.avatar{
-    margin-left: 2rem !important;
+.avatar {
+  margin-left: 2rem !important;
+}
+@media only screen and (max-width: 768px) {
+  .d-flex {
+    flex-direction: column !important;
+    margin-bottom: 2rem;
+  }
 }

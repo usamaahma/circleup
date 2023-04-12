@@ -5,8 +5,8 @@ import HeroSection from "../../components/heroSection";
 function Landing() {
   return (
     <div>
-      <Header />
-      <HeroSection />
+      {/* <Header />
+      <HeroSection /> */}
     </div>
   );
 }
