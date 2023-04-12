@@ -14,7 +14,7 @@ function Header() {
   return (
     <div>
       <Container>
-        <Navbar bg="transparent" expand="lg">
+        <Navbar bg="light" expand="lg" fixed="top" style={{ height: "5rem" }}>
           <Container fluid>
             <Navbar.Brand href="#">
               <img src="favicon.png" alt="abc" className="logo"></img>

@@ -13,3 +13,10 @@
 .avatar{
     margin-left: 2rem !important;
 }
+@media only screen and (max-width: 768px) {
+    .d-flex{
+        flex-direction: column !important;
+        margin-bottom: 2rem;
+    }
+
+}
