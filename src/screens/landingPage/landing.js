@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Button, Col, Row, Modal, Input } from "antd";
+import { Button, Col, Row, Modal, Input, Dropdown, Card, Avatar } from "antd";
 import "./landing.css";
-import { Card, Avatar } from "antd";
 import { Container } from "react-bootstrap";
 import { FaHeart } from "react-icons/fa";
+import { HiOutlineBars3 } from "react-icons/hi2";
+
 const { TextArea } = Input;
 
 const onChange = (e) => {
@@ -17,6 +18,45 @@ const url1 =
   "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-1.jpg";
 const url2 =
   "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-20.jpg";
+
+const items = [
+  {
+    key: "1",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.antgroup.com"
+      >
+        Copy Link To Adda{" "}
+      </a>
+    ),
+  },
+  {
+    key: "2",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.aliyun.com"
+      >
+        Edit Post{" "}
+      </a>
+    ),
+  },
+  {
+    key: "3",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.luohanacademy.com"
+      >
+        Embed CircleUp{" "}
+      </a>
+    ),
+  },
+];
 
 function Landing() {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -151,6 +191,35 @@ function Landing() {
                   />
                 </Modal>
               </div>
+            </div>
+            <div className="scnd-col-new-div">
+              <Container className="scd-col-new-div-div">
+                {" "}
+                <div className="scd-col-new-div-div-div">
+                  <Avatar
+                    size={50}
+                    src="https://htmldemo.net/adda/adda/assets/images/profile/profile-small-1.jpg"
+                  ></Avatar>{" "}
+                  <a>
+                    <p className="div-anc-snd-div">
+                      Merry Watson
+                      <br />
+                      <span className="div-span-snd-col">20 min ago</span>
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <Dropdown
+                    menu={{
+                      items,
+                    }}
+                    placement="bottomRight"
+                    arrow
+                  >
+                    <HiOutlineBars3 />
+                  </Dropdown>
+                </div>
+              </Container>
             </div>
           </div>
         </Col>

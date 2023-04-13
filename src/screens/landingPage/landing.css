@@ -62,7 +62,7 @@
 .scnd-col-div{
     background-color: white;
     padding: 1rem;
-    width: 30rem;
+    width: 28rem;
     height: 5rem;
 }
 .scnd-div-snd-div{
@@ -71,15 +71,19 @@
     align-items: center;
 }
 .snd-div-input{
-    width: 24rem;
+    width: 18rem;
     border-radius: 4rem;
-    height: 2.5rem;
+    height: 2rem;
 }
 .button-alag{
     position: absolute;
-    margin-left: 21rem  !important; 
+    margin-left: 17rem  !important; 
     background-color: rgb(220,71,52);
-    width:6rem;
+    width:5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5rem;
     color: white;
     font-size: .8rem;
@@ -98,4 +102,36 @@
     color: white!important;
     border-radius: 5rem;
 }
+.scnd-col-new-div{
+    background-color: white;
+    padding: 1rem ;
+    margin-top: 2rem;
+}
+.scd-col-new-div-div{
+display: flex;
+justify-content: space-between;    
 
+}
+.scd-col-new-div-div-div{
+    display: flex;
+    gap: 2rem;
+}
+.div-span-snd-col{
+    font-weight: lighter;
+    color: black ;
+}
+.div-anc-snd-div{
+    font-weight: 700;
+}
+.div-anc-snd-div:hover{
+    font-weight: 700;
+    color:  rgb(220,71,52);
+}
+.ant-dropdown-menu-title-content{
+    color: black;
+    text-decoration: none!important;
+}
+.ant-dropdown-menu-title-content:hover{
+    color: rgb(220,71,52)!important;
+    text-decoration: none!important;
+}
