@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import {
-  Briefcase,
-  House,
-  GeoAlt,
-  Activity,
-  HeartFill,
-} from "react-bootstrap-icons";
-import { Row, Col } from "antd";
+import { HeartFill } from "react-bootstrap-icons";
 
 const data = [
   {
@@ -29,35 +22,7 @@ const data = [
       "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-7.jpg",
   },
 ];
-const dataImage = [
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-1.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-2.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-3.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-4.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-5.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-6.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-7.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-8.jpg",
-  },
-  {
-    image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-9.jpg",
-  },
-];
+
 const dataText = [
   {
     id: 1,
