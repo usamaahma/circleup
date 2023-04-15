@@ -1,0 +1,13 @@
+.bg-image {
+  background-image: url("https://htmldemo.net/adda/adda/assets/images/banner/profile-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 99vw;
+  height: 42vh;
+}
+.center-col-land {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
