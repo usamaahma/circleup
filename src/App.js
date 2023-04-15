@@ -1,10 +1,11 @@
-import "./App.css";
-import Profile from "./screens/profile/profile";
+import Landing from "../src/screens/landingPage/landing";
+import Header from "./components/haeder/header";
 
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <Header/>
+      <Landing />
     </div>
   );
 }
