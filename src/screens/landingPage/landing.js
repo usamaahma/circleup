@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
 import { Button, Col, Row, Modal, Input, Dropdown, Card, Avatar } from "antd";
 import "./landing.css";
 import { Container } from "react-bootstrap";
 import { FaHeart } from "react-icons/fa";
 import { HiOutlineBars3 } from "react-icons/hi2";
+
 
 const { TextArea } = Input;
 
@@ -18,6 +20,7 @@ const url1 =
   "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-1.jpg";
 const url2 =
   "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-20.jpg";
+
 
 const items = [
   {
@@ -57,6 +60,7 @@ const items = [
     ),
   },
 ];
+
 
 function Landing() {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -192,6 +196,7 @@ function Landing() {
                 </Modal>
               </div>
             </div>
+
             <div className="scnd-col-new-div">
               <Container className="scd-col-new-div-div">
                 {" "}
@@ -221,6 +226,7 @@ function Landing() {
                 </div>
               </Container>
             </div>
+
           </div>
         </Col>
         <Col lg={6} md={24} sm={24}>

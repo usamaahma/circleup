@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { Briefcase, House, GeoAlt, Activity } from "react-bootstrap-icons";
+import {
+  Briefcase,
+  House,
+  GeoAlt,
+  Activity,
+  HeartFill,
+} from "react-bootstrap-icons";
 import { Row, Col } from "antd";
 
 const data = [
@@ -21,7 +27,7 @@ const data = [
     icon: <Activity color="#dc4734" size={20} />,
   },
 ];
-const data1 = [
+const dataImage = [
   {
     image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-1.jpg",
   },
@@ -50,7 +56,30 @@ const data1 = [
     image: "https://htmldemo.net/adda/adda/assets/images/gallery/gallery-9.jpg",
   },
 ];
+const dataText = [
+  {
+    id: 1,
+    text: "Travel The World",
+    text1: "Adventure",
+    image:
+      "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-1.jpg",
+  },
+  {
+    id: 2,
+    text: "Travel The World",
+    text1: "Adventure",
+    image:
+      "https://htmldemo.net/adda/adda/assets/images/profile/profile-35x35-11.jpg",
+  },
+];
 function LeftSection() {
+  const [heartColors, setHeartColors] = useState({});
+
+  const handleClick = (id) => {
+    const newHeartColors = { ...heartColors };
+    newHeartColors[id] = !newHeartColors[id];
+    setHeartColors(newHeartColors);
+  };
   return (
     <div>
       <div className="bg-clr">
@@ -79,13 +108,39 @@ function LeftSection() {
       </div>
       <div className="div-erik">
         <h3 className="er-text">Sweets Memories</h3>
+        <div className="div-orange-col"></div>
         <Row justify="center">
-          {data1.map((img) => (
+          {dataImage.map((img) => (
             <Col lg={8}>
               <img className="mar-to-bot" src={img.image} alt="" />
             </Col>
           ))}
         </Row>
+      </div>
+      <div className="div-erik">
+        <h3 className="er-text">Page You May Like</h3>
+        <div className="div-orange-col"></div>
+        <div>
+          {dataText.map((post) => (
+            <div className="flex-post-left">
+              <div>
+                <img className="img-size-circ" src={post.image} alt="" />
+              </div>
+              <div>
+                <h4 className="post-text-left">{post.text}</h4>
+                <h5>{post.text1}</h5>
+              </div>
+              <div>
+                <span
+                  onClick={() => handleClick(post.id)}
+                  style={{ color: heartColors[post.id] ? "red" : "white" }}
+                >
+                  <HeartFill size={20} />
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
