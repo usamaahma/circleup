@@ -14,17 +14,17 @@ function Header() {
   return (
     <div>
       <Container>
-        <Navbar bg="light" expand="lg" fixed="top" style={{ height: "5rem" }}>
-          <Container fluid>
+        <Navbar bg="light" expand="lg" style={{ height: "8rem" }}>
+          <Container>
             <Navbar.Brand href="#">
-              <img src="favicon.png" alt="abc" className="logo"></img>
+              <img src="favicon.png" alt="abc" className="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
-                navbarScroll
+                // navbarScroll
               >
                 <Nav.Link href="#action1" className="navbartxt">
                   Home
@@ -37,11 +37,11 @@ function Header() {
                   Notification
                 </Nav.Link>
               </Nav>
-              <Nav
+              {/* <Nav
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
-              ></Nav>
+              ></Nav> */}
               <Form className="d-flex">
                 <Form.Control
                   type="search"
@@ -51,7 +51,7 @@ function Header() {
                 />
                 <Button variant="outline-success">Search</Button>
               </Form>
-              <Avatar size={40} className="avatar" src={url} />
+              <Avatar size={50} className="avatar" src={url} />
             </Navbar.Collapse>
           </Container>
         </Navbar>

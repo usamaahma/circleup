@@ -1,3 +1,137 @@
 .landing{
-    margin-top: 6rem;
+    padding-top: 7rem;
+    background-color: rgb(241,241,241);
+}
+.card-col{
+    border-radius: 0% !important;
+}
+.img-card{
+    border-radius: 0% !important;
+    height: 20vh;
+    border: .6rem solid rgb(85,72,84);
+}
+.anch-img-col{
+    font-size:1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: flex!important;
+    justify-content: center !important;
+}
+.anch-img-col:hover{
+    color: black;
+    color: rgb(220,71,52);
+}
+.p-col{
+    color: rgb(102,102,102);
+    text-align: center;
+}
+.avatar-col{
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 4rem;
+}
+.scnd-card{
+    margin-top: 2rem;
+}
+.p-scnd-card{
+    font-size: large;
+    font-weight: 700;
+}
+.div-orange-col{
+    background-color: rgb(220,71,50);
+    margin-top: -.6rem;
+    width: 2.2rem;
+    height: .01rem;
+}
+.button {
+    background-color: transparent;
+    border: none;
+  }
+.avat-p-butt{
+    display: flex;
+    justify-content: space-evenly;
+}
+.anther-txt-col{
+    font-size: small;
+    font-weight: 700;
+}
+.anther-txt-col:hover{
+    color:  rgb(220,71,50);
+}
+.scnd-col-div{
+    background-color: white;
+    padding: 1rem;
+    width: 28rem;
+    height: 5rem;
+}
+.scnd-div-snd-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.snd-div-input{
+    width: 18rem;
+    border-radius: 4rem;
+    height: 2rem;
+}
+.button-alag{
+    position: absolute;
+    margin-left: 17rem  !important; 
+    background-color: rgb(220,71,52);
+    width:5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.button-alag:hover{
+    background-color: rgb(51,51,51);
+    color: white!important; 
+    border-color: transparent!important;
+}
+.ant-modal-title{
+    font-size: 1.3rem!important;
+}
+.ant-btn{
+    background-color: rgb(220,71,52)!important;
+    color: white!important;
+    border-radius: 5rem;
+}
+.scnd-col-new-div{
+    background-color: white;
+    padding: 1rem ;
+    margin-top: 2rem;
+}
+.scd-col-new-div-div{
+display: flex;
+justify-content: space-between;    
+
+}
+.scd-col-new-div-div-div{
+    display: flex;
+    gap: 2rem;
+}
+.div-span-snd-col{
+    font-weight: lighter;
+    color: black ;
+}
+.div-anc-snd-div{
+    font-weight: 700;
+}
+.div-anc-snd-div:hover{
+    font-weight: 700;
+    color:  rgb(220,71,52);
+}
+.ant-dropdown-menu-title-content{
+    color: black;
+    text-decoration: none!important;
+}
+.ant-dropdown-menu-title-content:hover{
+    color: rgb(220,71,52)!important;
+    text-decoration: none!important;
 }
