@@ -11,3 +11,13 @@
   justify-content: center;
   align-items: center;
 }
+.center-tab {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

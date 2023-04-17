@@ -1,6 +1,8 @@
 import React from "react";
 import { Input } from "antd";
 import "./style.css";
+import Posting from "../posting";
+import data from "../../data.json";
 function MidSection() {
   return (
     <div className="main-mid">
@@ -19,7 +21,11 @@ function MidSection() {
           <button className="btn-mid-share">Share</button>
         </div>
       </div>
-      <div></div>
+      {data.map((user) => (
+        <div>
+          <Posting />
+        </div>
+      ))}
     </div>
   );
 }

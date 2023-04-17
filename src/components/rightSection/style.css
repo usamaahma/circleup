@@ -54,3 +54,19 @@
 .margin-left-right {
   margin-left: 2rem;
 }
+@media (max-width: 1024px) {
+  .mid-screen {
+    font-size: 1.4rem;
+  }
+  .mid-img-screen {
+    width: 19rem;
+  }
+}
+@media (max-width: 768px) {
+  .mid-screen {
+    font-size: 1.7rem;
+  }
+  .mid-img-screen {
+    width: 22rem;
+  }
+}

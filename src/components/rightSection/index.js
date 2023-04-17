@@ -58,7 +58,7 @@ function RightSection() {
               <img className="img-size-circ" src={user.image} alt="" />
             </div>
             <div className="margin-left-right">
-              <h4>{user.text}</h4>
+              <h4 className="mid-screen">{user.text}</h4>
               <p>{user.text2}</p>
             </div>
           </div>
@@ -67,8 +67,8 @@ function RightSection() {
       <div className="div-erik">
         <h3 className="er-text">Advertizement</h3>
         <div className="div-orange-col"></div>
-
         <img
+          className="mid-img-screen"
           src="https://htmldemo.net/adda/adda/assets/images/banner/advertise.jpg"
           alt=""
         />
